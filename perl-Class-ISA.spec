@@ -8,11 +8,11 @@ Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
 Summary(pl):	Modu³ perla Class::ISA - zwraca ¶cie¿kê przeszukiwania dla drzewa ISA klasy
 Name:		perl-Class-ISA
 Version:	0.32
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
