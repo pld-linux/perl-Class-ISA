@@ -1,26 +1,14 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Class
-%define		pnam	ISA
+%define	pdir	Class
+%define	pnam	ISA
 Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
-Summary(cs):	Modul Class::ISA pro Perl
-Summary(da):	Perlmodul Class::ISA
-Summary(de):	Class::ISA Perl Modul
-Summary(es):	Módulo de Perl Class::ISA
-Summary(fr):	Module Perl Class::ISA
-Summary(it):	Modulo di Perl Class::ISA
-Summary(ja):	Class::ISA Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Class::ISA ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Class::ISA
 Summary(pl):	Modu³ perla Class::ISA - zwraca ¶cie¿kê przeszukiwania dla drzewa ISA klasy
-Summary(pt_BR):	Módulo Perl Class::ISA
-Summary(pt):	Módulo de Perl Class::ISA
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Class::ISA
-Summary(sv):	Class::ISA Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Class::ISA
-Summary(zh_CN):	Class::ISA Perl Ä£¿é
 Name:		perl-Class-ISA
 Version:	0.32
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -45,6 +33,8 @@ zadanej metody (bez duplikatów).
 %build
 perl Makefile.PL
 %{__make}
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
