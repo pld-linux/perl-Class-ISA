@@ -5,7 +5,7 @@
 %define	pdir	Class
 %define	pnam	ISA
 Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
-Summary(pl):	Modu³ perla Class::ISA - zwraca ¶cie¿kê przeszukiwania dla drzewa ISA klasy
+Summary(pl):	Modu³ Perla Class::ISA - zwrócenie ¶cie¿ki przeszukiwania dla drzewa klasy ISA
 Name:		perl-Class-ISA
 Version:	0.32
 Release:	3
