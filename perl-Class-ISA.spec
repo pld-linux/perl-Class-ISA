@@ -9,7 +9,8 @@ Summary(pl):	Modu³ Perla Class::ISA - zwrócenie ¶cie¿ki przeszukiwania dla drzew
 Name:		perl-Class-ISA
 Version:	0.32
 Release:	3
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	af2282c351ffb845001cb97ed8ea31fd
