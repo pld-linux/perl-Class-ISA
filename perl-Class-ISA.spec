@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	ISA
 Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
-Summary(pl):	Modu³ Perla Class::ISA - zwrócenie ¶cie¿ki przeszukiwania dla drzewa klasy ISA
+Summary(pl.UTF-8):   ModuÅ‚ Perla Class::ISA - zwrÃ³cenie Å›cieÅ¼ki przeszukiwania dla drzewa klasy ISA
 Name:		perl-Class-ISA
 Version:	0.33
 Release:	1
@@ -25,10 +25,10 @@ This library, Class::ISA, provides functions that return a list (in
 order) of names of classes Perl would search to find a method, with
 no duplicates.
 
-%description -l pl
-Biblioteka Class::ISA udostêpnia funkcje zwracaj±ce (uporz±dkowan±)
-listê nazw klas, które Perl powinien przeszukaæ w celu znalezienia
-zadanej metody (bez duplikatów).
+%description -l pl.UTF-8
+Biblioteka Class::ISA udostÄ™pnia funkcje zwracajÄ…ce (uporzÄ…dkowanÄ…)
+listÄ™ nazw klas, ktÃ³re Perl powinien przeszukaÄ‡ w celu znalezienia
+zadanej metody (bez duplikatÃ³w).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
