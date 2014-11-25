@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Class
 %define		pnam	ISA
+%include	/usr/lib/rpm/macros.perl
 Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
 Summary(pl.UTF-8):	Moduł Perla Class::ISA - zwrócenie ścieżki przeszukiwania dla drzewa klasy ISA
 Name:		perl-Class-ISA
@@ -15,15 +15,16 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3a2ad203c8dc87d6c9de16215d00af47
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Class-ISA/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This library, Class::ISA, provides functions that return a list (in
-order) of names of classes Perl would search to find a method, with
-no duplicates.
+order) of names of classes Perl would search to find a method, with no
+duplicates.
 
 %description -l pl.UTF-8
 Biblioteka Class::ISA udostępnia funkcje zwracające (uporządkowaną)
