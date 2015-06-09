@@ -13,7 +13,7 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3a2ad203c8dc87d6c9de16215d00af47
 URL:		http://search.cpan.org/dist/Class-ISA/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %{perl_vendorlib}/Class/ISA.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Class::ISA.3pm*
