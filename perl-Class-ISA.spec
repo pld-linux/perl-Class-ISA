@@ -4,7 +4,6 @@
 
 %define		pdir	Class
 %define		pnam	ISA
-%include	/usr/lib/rpm/macros.perl
 Summary:	Class::ISA Perl module - report the search path for a class's ISA tree
 Summary(pl.UTF-8):	Moduł Perla Class::ISA - zwrócenie ścieżki przeszukiwania dla drzewa klasy ISA
 Name:		perl-Class-ISA
